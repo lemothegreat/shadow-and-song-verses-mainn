@@ -17,7 +17,7 @@ const HeroSection = () => {
           fetchPriority="high"
           width={1200}
           height={675}
-          decoding="async"
+          decoding="sync"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/30 to-background" />
       </div>

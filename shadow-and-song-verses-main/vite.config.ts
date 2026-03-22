@@ -21,10 +21,34 @@ export default defineConfig(({ mode }) => ({
     },
   },
 
-  // 🔥 ADD THIS (optimization)
   build: {
     minify: "esbuild",
     cssCodeSplit: true,
     chunkSizeWarningLimit: 500,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (!id.includes("node_modules")) return;
+
+          if (
+            id.includes("react") ||
+            id.includes("react-dom") ||
+            id.includes("react-router-dom")
+          ) {
+            return "react-vendor";
+          }
+
+          if (id.includes("framer-motion")) {
+            return "motion";
+          }
+
+          if (id.includes("lucide-react")) {
+            return "icons";
+          }
+
+          return "vendor";
+        },
+      },
+    },
   },
 }));
