@@ -57,8 +57,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1.4 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <a href="#literary" className="ghost-btn">
-            Ανάγνωση Αποσπάσματος
+          <a href="#free-reading" className="ghost-btn">
+            Δωρεάν ανάγνωση
           </a>
           <Link to="/thilyki-skia-mou" className="ghost-btn">
             Σελίδα Μυθιστορήματος

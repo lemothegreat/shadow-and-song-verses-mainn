@@ -29,6 +29,20 @@ const AuthorSection = () => {
             Κάλλας
           </h2>
 
+          <div className="relative max-w-md mx-auto mb-16 overflow-hidden rounded-[1.5rem] border border-gold/20 shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
+            <img
+              src="/ioannis_kallas.webp"
+              alt="Πορτρέτο του συγγραφέα Ιωάννη Κάλλα"
+              className="w-full h-auto object-cover brightness-75 contrast-110 saturate-90"
+              loading="lazy"
+              width={1024}
+              height={1536}
+              decoding="async"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+            <div className="absolute inset-0 ring-1 ring-inset ring-gold/10" />
+          </div>
+
           <div className="w-16 h-[1px] bg-gold/30 mx-auto mb-12" aria-hidden="true" />
 
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
