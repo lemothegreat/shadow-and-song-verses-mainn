@@ -10,6 +10,7 @@ import JournalSection from "@/components/JournalSection";
 import FreeBooksSection from "@/components/FreeBooksSection";
 import SeoHead from "@/components/SeoHead";
 import SiteFooter from "@/components/SiteFooter";
+import SocialFooter from "@/components/SocialFooter"; // ✅ NEW IMPORT
 
 const Index = () => {
   return (
@@ -25,7 +26,9 @@ const Index = () => {
       >
         Μετάβαση στο περιεχόμενο
       </a>
+
       <Navigation />
+
       <main id="main-content">
         <HeroSection />
         <NovelSection />
@@ -38,6 +41,10 @@ const Index = () => {
         <JournalSection />
       </main>
 
+      {/* ✅ NEW SOCIAL FOOTER */}
+      <SocialFooter />
+
+      {/* EXISTING FOOTER (UNCHANGED) */}
       <SiteFooter />
     </div>
   );
